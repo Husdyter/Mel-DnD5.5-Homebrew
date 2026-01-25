@@ -1,0 +1,154 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Melers12",
+				"abbreviation": "MLS",
+				"full": "Warlock Patron - The Archmage (2024)",
+				"authors": ["reaperzeus"],
+				"convertedBy": ["Mel [they/them]"],
+				"version": "1.0",
+				"color": "CA5707",
+				"url": "https://www.gmbinder.com/share/-MpOCWabaNOzl_fFBvfg"
+			}
+		],
+		"edition": "one",
+		"dateAdded": 1,
+		"dateLastModified": 1
+	},
+	"subclass": [
+		{
+			"name": "Archmage Patron",
+			"shortName": "Archmage",
+			"source": "Melers12",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"page": 1,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": ["Magic Missile", "Tasha's Caustic Brew|TCE"],
+						"s2": ["Tasha's Mind Whip|TCE", "Aganazzar's Scorcher|XGE"],
+						"s3": ["Fireball", "Laerals's Silver Lance|FRHoF", "Melf's Minute Meteors|XGE"],
+						"s4": ["Evard's Black Tentacles", "Mordenkainen's Private Sanctum"],
+						"s5": ["Cone of Cold", "Telekinesis"]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Archmage Patron|Warlock|PHB|Archmage|Melers12|3",
+				"Arcane Study Guide|Warlock|PHB|Archmage|Melers12|3",
+				"Casting Endurance|Warlock|PHB|Archmage|Melers12|6",
+				"Focused Curriculum|Warlock|PHB|Archmage|Melers12|10",
+				"Simulacrum Tutor|Warlock|PHB|Archmage|Melers12|14"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Archmage Patron",
+			"source": "Melers12",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Archmage",
+			"subclassSource": "Melers12",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you gain the Archmage Expanded Spells.",
+				{
+					"type": "table",
+					"caption": "Archmage Expanded Spells",
+					"colLabels": ["Level", "Spells"],
+					"rows": [
+						["1st", "{@spell Magic Missile}, {@spell Tasha's Caustic Brew|TCE}"],
+						["2nd", "{@spell Aganazzar's Scorcher|XGE}, {@spell Tasha's Mind Whip|TCE}"],
+						["3rd", "{@spell Fireball}, {@spell Laerals's Silver Lance|FRHoF}, {@spell Melf's Minute Meteors|XGE}"],
+						["4th", "{@spell Evard's Black Tentacles}, {@spell Mordenkainen's Private Sanctum}"],
+						["5th", "{@spell Cone of Cold}, {@spell Telekinesis}"]
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Study Guide",
+			"source": "Melers12",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Archmage",
+			"subclassSource": "Melers12",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, your patron gives you a book to help you study while you are not together. This book contains a particular cantrip you have been working on.",
+				"Choose one cantrip that requires a spell attack roll from the sorcerer, warlock, or wizard spell list. You learn this cantrip, treating it as a warlock cantrip for you, and it does not count against your number of cantrips known.",
+				"Once per turn when you deal damage with this cantrip, you can deal additional damage equal to your proficiency bonus (+{@pb|PB}).",
+				"Additionally, for any invocation that has a prerequisite of knowing the {@spell Eldritch Blast} cantrip, the cantrip you choose can fulfill the prerequisite and gain the invocation's benefits.",
+				"If you choose the Pact of the Tome at 3rd level, this book becomes your Book of Shadows, and the benefits of this feature extend to any cantrips you learn from it that require a spell attack."
+			]
+		},
+		{
+			"name": "Casting Endurance",
+			"source": "Melers12",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Archmage",
+			"subclassSource": "Melers12",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"Starting at 6th level, your patron’s insistence on being able to cast more throughout the day pays off. You may cast your warlock spells of 3rd level or lower at their lowest level without expending a warlock spell slot.",
+				"You may do so a number of times equal to half your proficiency bonus (round up), and regain the ability to do so once you complete a long rest."
+			]
+		},
+		{
+			"name": "Focused Curriculum",
+			"source": "Melers12",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Archmage",
+			"subclassSource": "Melers12",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"Beginning at 10th level, pick one school of magic to gain a corresponding benefit.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{ "name": "Abjuration", "type": "entries", "entries": ["Whenever you cast a spell of the abjuration school, your AC increases by one for one minute. You can benefit from this bonus no more than once per turn, and it stacks up to an amount equal to half your proficiency bonus (round up)."] },
+						{ "name": "Conjuration", "type": "entries", "entries": ["You have advantage on saving throws against effects that teleport you or transport you to other planes against your will. Additionally, your conjuration spells that teleport can teleport an additional number of feet equal to your warlock level. Finally, conjuration spells with a duration of at least one minute can last an additional number of minutes equal to your warlock level."] },
+						{ "name": "Divination", "type": "entries", "entries": ["You have advantage on Wisdom (Perception) checks, and cannot be perceived by divination magic, except when cast by your patron."] },
+						{ "name": "Enchantment", "type": "entries", "entries": ["You have advantage on saving throws against being charmed, and creatures that fail their saving throws against your enchantment spells forget you cast it, even if they normally know when the spell ends."] },
+						{ "name": "Evocation", "type": "entries", "entries": ["You gain resistance to one of the following damage types: Acid, cold, fire, lightning, poison, or thunder. You can choose a new damage type when you complete a long rest. Additionally, when you cast an evocation spell that deals damage, you can add your proficiency bonus to one damage roll of that spell against one of its targets."] },
+						{ "name": "Illusion", "type": "entries", "entries": ["You have advantage on checks made to detect illusions, and you can use an action to appear as a different creature type or alignment to spells or magical effects that detect such things. You may only change them again after you complete a long rest."] },
+						{ "name": "Necromancy", "type": "entries", "entries": ["You become resistant to necrotic damage. When you cast a necromancy spell, you can gain temporary hit points equal to 5 times the spell’s level. Cantrips grant three temporary hit points when you use this feature. You may use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest."] },
+						{ "name": "Transmutation", "type": "entries", "entries": ["You have advantage on saving throws for spells or magical effects that would alter your form against your will. Spells with a costly material component need only cost half as much for you, as you can substitute other materials."] }
+					]
+				},
+				"You may change your major only after one week of continuous study of a new school, spending at least 8 hours each day. Your patron sighs with exasperation each time you do."
+			]
+		},
+		{
+			"name": "Simulacrum Tutor",
+			"source": "Melers12",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Archmage",
+			"subclassSource": "Melers12",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"At 14th level, your patron sends a simulacrum to join you on your journey, (because you can’t be left unsupervised) because they want to be able to watch your growth “in person.” The simulacrum is made using a portion of your powers, meaning it refers to your Proficiency Bonus (PB) and warlock level in several places.\n\nIt is friendly to you and your allies, but follows the orders of your patron, and your patron can perceive through its senses and send it orders at any time. In combat, its initiative is 5 less than yours. See the Simulacrum Tutor stat block below.",
+				{
+					"type": "inset",
+					"name": "Simulacrum Tutor Statblock Summary",
+					"entries": [
+						"**HP:** 5 x Warlock Level. **AC:** 14.",
+						"**Spellcasting:** Pick spells (max 6th level) equal to half your warlock level from Wiz/Sorc/War lists. It has slots up to 6th level but won't deal damage.",
+						"**Reaction:** Can take a hit for you."
+					]
+				}
+			]
+		}
+	]
+}
