@@ -12,7 +12,6 @@
 				"url": "https://www.gmbinder.com/share/-MpOCWabaNOzl_fFBvfg"
 			}
 		],
-		"edition": "one",
 		"dateAdded": 1,
 		"dateLastModified": 1
 	},
@@ -27,16 +26,16 @@
 			"additionalSpells": [
 				{
 					"expanded": {
-						"s1": ["Magic Missile", "Tasha's Caustic Brew|TCE"],
-						"s2": ["Tasha's Mind Whip|TCE", "Aganazzar's Scorcher|XGE"],
-						"s3": ["Fireball", "Laerals's Silver Lance|FRHoF", "Melf's Minute Meteors|XGE"],
-						"s4": ["Evard's Black Tentacles", "Mordenkainen's Private Sanctum"],
-						"s5": ["Cone of Cold", "Telekinesis"]
+						"s1": ["magic missile", "tasha's caustic brew|tce"],
+						"s2": ["tasha's mind whip|tce", "aganazzar's scorcher|xge"],
+						"s3": ["fireball", "laeral's silver lance|frhof", "melf's minute meteors|xge"],
+						"s4": ["evard's black tentacles", "mordenkainen's private sanctum"],
+						"s5": ["cone of cold", "telekinesis"]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Archmage Patron|Warlock|PHB|Archmage|Melers12|3",
+				"Archmage Expanded Spells|Warlock|PHB|Archmage|Melers12|3",
 				"Arcane Study Guide|Warlock|PHB|Archmage|Melers12|3",
 				"Casting Endurance|Warlock|PHB|Archmage|Melers12|6",
 				"Focused Curriculum|Warlock|PHB|Archmage|Melers12|10",
@@ -46,7 +45,7 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "Archmage Patron",
+			"name": "Archmage Expanded Spells",
 			"source": "Melers12",
 			"className": "Warlock",
 			"classSource": "PHB",
@@ -58,11 +57,11 @@
 				{
 					"type": "table",
 					"caption": "Archmage Expanded Spells",
-					"colLabels": ["Level", "Spells"],
+					"colLabels": ["Spell Level", "Spells"],
 					"rows": [
 						["1st", "{@spell Magic Missile}, {@spell Tasha's Caustic Brew|TCE}"],
 						["2nd", "{@spell Aganazzar's Scorcher|XGE}, {@spell Tasha's Mind Whip|TCE}"],
-						["3rd", "{@spell Fireball}, {@spell Laerals's Silver Lance|FRHoF}, {@spell Melf's Minute Meteors|XGE}"],
+						["3rd", "{@spell Fireball}, {@spell Laeral's Silver Lance|FRHoF}, {@spell Melf's Minute Meteors|XGE}"],
 						["4th", "{@spell Evard's Black Tentacles}, {@spell Mordenkainen's Private Sanctum}"],
 						["5th", "{@spell Cone of Cold}, {@spell Telekinesis}"]
 					]
@@ -138,7 +137,8 @@
 			"level": 14,
 			"header": 1,
 			"entries": [
-				"At 14th level, your patron sends a simulacrum to join you on your journey, (because you can’t be left unsupervised) because they want to be able to watch your growth “in person.” The simulacrum is made using a portion of your powers, meaning it refers to your Proficiency Bonus (PB) and warlock level in several places.\n\nIt is friendly to you and your allies, but follows the orders of your patron, and your patron can perceive through its senses and send it orders at any time. In combat, its initiative is 5 less than yours. See the Simulacrum Tutor stat block below.",
+				"At 14th level, your patron sends a simulacrum to join you on your journey.",
+				"It is friendly to you and your allies, but follows the orders of your patron, and your patron can perceive through its senses and send it orders at any time. In combat, its initiative is 5 less than yours.",
 				{
 					"type": "inset",
 					"name": "Simulacrum Tutor Statblock Summary",
