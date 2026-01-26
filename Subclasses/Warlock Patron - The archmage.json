@@ -7,13 +7,14 @@
 				"full": "Warlock Patron - The Archmage (2024)",
 				"authors": ["reaperzeus"],
 				"convertedBy": ["Mel [they/them]"],
-				"version": "4.0",
+				"version": "1.0",
 				"color": "CA5707",
 				"url": "https://www.gmbinder.com/share/-MpOCWabaNOzl_fFBvfg"
 			}
 		],
+		"edition": "one",
 		"dateAdded": 1769368690,
-		"dateLastModified": 1769368690
+		"dateLastModified": 1769417471
 	},
 	"subclass": [
 		{
@@ -28,7 +29,7 @@
 					"expanded": {
 						"s1": ["Magic Missile", "Tasha's Caustic Brew|TCE"],
 						"s2": ["Tasha's Mind Whip|TCE", "Aganazzar's Scorcher|XGE"],
-						"s3": ["Fireball", "Lightning Bolt", "Melf's Minute Meteors|XGE"],
+						"s3": ["Fireball", "Laeral's Silver Lance|FRHoF", "Melf's Minute Meteors|XGE"],
 						"s4": ["Evard's Black Tentacles", "Mordenkainen's Private Sanctum"],
 						"s5": ["Cone of Cold", "Telekinesis"]
 					}
@@ -42,7 +43,7 @@
 			],
 			"subclassSpells": [
 				"Magic Missile", "Tasha's Caustic Brew|TCE", "Tasha's Mind Whip|TCE", "Aganazzar's Scorcher|XGE",
-				"Fireball", "Lightning Bolt", "Melf's Minute Meteors|XGE", "Evard's Black Tentacles",
+				"Fireball", "Laeral's Silver Lance|FRHoF", "Melf's Minute Meteors|XGE", "Evard's Black Tentacles",
 				"Mordenkainen's Private Sanctum", "Cone of Cold", "Telekinesis"
 			],
 			"subclassFeatures": [
@@ -72,7 +73,7 @@
 					"rows": [
 						["1st", "{@spell Magic Missile}, {@spell Tasha's Caustic Brew|TCE}"],
 						["2nd", "{@spell Aganazzar's Scorcher|XGE}, {@spell Tasha's Mind Whip|TCE}"],
-						["3rd", "{@spell Fireball}, {@spell Lightning Bolt}, {@spell Melf's Minute Meteors|XGE}"],
+						["3rd", "{@spell Fireball}, {@spell Laeral's Silver Lance|FRHoF}, {@spell Melf's Minute Meteors|XGE}"],
 						["4th", "{@spell Evard's Black Tentacles}, {@spell Mordenkainen's Private Sanctum}"],
 						["5th", "{@spell Cone of Cold}, {@spell Telekinesis}"]
 					]
@@ -88,23 +89,10 @@
 			"subclassSource": "Melers12",
 			"level": 3,
 			"entries": [
-				"You learn one cantrip that requires a spell attack roll from the Sorcerer, Warlock, or Wizard list. Once per turn, when you deal damage with it, add your PB (+{@dice 1d0+@pb|PB}) to the damage."
-			],
-			"foundrySubclassFeature": [
-				{
-					"name": "Arcane Study Guide Effect",
-					"type": "bonus",
-					"level": 3,
-					"foundryEffects": [
-						{
-							"name": "Arcane Study (Cantrip Bonus)",
-							"changes": [
-								{ "key": "system.bonuses.spell.damage", "value": "+ @prof", "mode": 2 }
-							],
-							"description": "Añade el bono de competencia al daño de tus trucos (Cantrips)."
-						}
-					]
-				}
+				"At 3rd level, your patron gives you a book to help you study while you are not together. This book contains a particular cantrip you have been working on. Choose one cantrip that requires a spell attack roll from the sorcerer, warlock, or wizard spell list. You learn this cantrip, treating it as a warlock cantrip for you, and it does not count against your number of cantrips known.",
+				"Once per turn when you deal damage with this cantrip, you can deal additional damage equal to your proficiency bonus.",
+				"Additionally, for any invocation that has a prerequisite of knowing the Eldritch Blast cantrip, the cantrip you choose can fulfil the prerequisite and gain the invocation’s benefits.",
+				"If you choose the Pact of the Tome at 3rd level, this book becomes your Book of Shadows, and the benefits of this feature extend to any cantrips you learn from it that require a spell attack."
 			]
 		},
 		{
@@ -116,20 +104,7 @@
 			"subclassSource": "Melers12",
 			"level": 6,
 			"entries": [
-				"You can cast Warlock spells of 3rd level or lower at their lowest level without expending a slot. Uses: {@dice 1d0+ceil(@pb/2)|half PB (round up)} per Long Rest."
-			],
-			"foundrySubclassFeature": [
-				{
-					"name": "Casting Endurance Resource",
-					"type": "resource",
-					"level": 6,
-					"foundryData": {
-						"system.resources.primary.label": "Casting Endurance",
-						"system.resources.primary.value": "ceil(@prof / 2)",
-						"system.resources.primary.max": "ceil(@prof / 2)",
-						"system.resources.primary.lr": true
-					}
-				}
+				"Starting at 6th level, your patron’s insistence on being able to cast more throughout the day pays off. You may cast your warlock spells of 3rd level or lower at their lowest level without expending a warlock spell slot. You may do so a number of times equal to half your proficiency bonus (round up), and regain the ability to do so once you complete a long rest."
 			]
 		},
 		{
@@ -140,26 +115,22 @@
 			"subclassShortName": "Archmage",
 			"subclassSource": "Melers12",
 			"level": 10,
-			"entries": ["Select one magical school to focus your studies."],
-			"foundrySubclassFeature": [
+			"entries": [
+				"Beginning at 10th level, your patron starts focusing your studies on a particular school of magic. Pick one of the schools below and gain the corresponding benefit.",
 				{
-					"name": "Curriculum Choice",
-					"type": "choice",
-					"level": 10,
-					"options": {
-						"Abjuration": { "entries": ["AC +1."], "foundryData": { "system.bonuses.abilities.ac": "1" } },
-						"Conjuration": { "entries": ["Adv. vs Teleport."], "foundryData": { "system.traits.da.custom": "Adv. vs Teleport" } },
-						"Divination": { "entries": ["Adv. Perception."], "foundryData": { "system.skills.prc.bonuses.check": "1" } },
-						"Enchantment": { "entries": ["Adv. vs Charm."], "foundryData": { "system.traits.da.custom": "Adv. vs Charm" } },
-						"Evocation": { 
-							"entries": ["Extra PB to damage."], 
-							"foundryEffects": [{ "name": "Evocation Savant", "changes": [{ "key": "system.bonuses.spell.damage", "value": "+ @prof", "mode": 2 }] }]
-						},
-						"Illusion": { "entries": ["Adv. vs Illusions."], "foundryData": { "system.traits.da.custom": "Adv. vs Illusions" } },
-						"Necromancy": { "entries": ["Necrotic Res."], "foundryData": { "system.traits.dr.value": ["necrotic"] } },
-						"Transmutation": { "entries": ["Adv. vs Polymorph."], "foundryData": { "system.traits.da.custom": "Adv. vs Polymorph" } }
-					}
-				}
+					"type": "list",
+					"items": [
+						"Abjuration: Whenever you cast a spell of the abjuration school, your AC increases by one for one minute. You can benefit from this bonus no more than once per turn, and it stacks up to an amount equal to half your proficiency bonus (round up).",
+						"Conjuration: You have advantage on saving throws against effects that teleport you or transport you to other planes against your will. Additionally, your conjuration spells that teleport can teleport an additional number of feet equal to your warlock level. Finally, conjuration spells with a duration of at least one minute can last an additional number of minutes equal to your warlock level.",
+						"Divination: You have advantage on Wisdom (Perception) checks, and cannot be perceived by divination magic, except when cast by your patron.",
+						"Enchantment: You have advantage on saving throws against being charmed, and creatures that fail their saving throws against your enchantment spells forget you cast it, even if they normally know when the spell ends.",
+						"Evocation: You gain resistance to one of the following damage types: Acid, cold, fire, lightning, poison, or thunder. You can choose a new damage type when you complete a long rest. Additionally, when you cast an evocation spell that deals damage, you can add your proficiency bonus to one damage roll of that spell against one of its targets.",
+						"Illusion: You have advantage on checks made to detect illusions, and you can use an action to appear as a different creature type or alignment to spells or magical effects that detect such things. You may only change them again after you complete a long rest.",
+						"Necromancy: You become resistant to necrotic damage. When you cast a necromancy spell, you can gain temporary hit points equal to 5 times the spell’s level. Cantrips grant three temporary hit points when you use this feature. You may use this feature a number of times equal to your proficiency bonus, and regain all expended uses when you finish a long rest.",
+						"Transmutation: You have advantage on saving throws for spells or magical effects that would alter your form against your will. Spells with a costly material component need only cost half as much for you, as you can substitute other materials."
+					]
+				},
+				"You may change your major only after one week of continuous study of a new school, spending at least 8 hours each day. Your patron sighs with exasperation each time you do."
 			]
 		},
 		{
@@ -171,24 +142,8 @@
 			"subclassSource": "Melers12",
 			"level": 14,
 			"entries": [
-				"Your patron sends a simulacrum to supervise your growth.",
-				{
-					"type": "statblock",
-					"name": "Simulacrum Tutor",
-					"source": "Melers12",
-					"size": ["M"], "type": "construct", "alignment": ["N"],
-					"ac": [14], "hp": { "special": "5 \u00d7 Warlock level" },
-					"speed": { "walk": 30 },
-					"str": 8, "dex": 12, "con": 14, "int": 20, "wis": 14, "cha": 20,
-					"senses": ["darkvision 60 ft."], "passive": 12,
-					"languages": ["Common", "Draconic", "Giant"],
-					"traits": [
-						{ "name": "Simulacrum", "entries": ["Cannot regain HP. Destroyed at 0 HP."] },
-						{ "name": "Spellcasting", "entries": ["Knows spells equal to half Warlock level (max 6th level). Cannot deal damage or debuff."] }
-					],
-					"actions": [{ "name": "Dagger", "entries": ["+PB to hit. 1d4 + 1 piercing."] }],
-					"reactions": [{ "name": "Defend the Disciple", "entries": ["Takes damage for you."] }]
-				}
+				"At 14th level, your patron sends a simulacrum to join you on your journey, {@strike because you can’t be left unsupervised} because they want to be able to watch your growth “in person.” The simulacrum is made using a portion of your powers, meaning it refers to your Proficiency Bonus (PB) and warlock level in several places.",
+				"It is friendly to you and your allies, but follows the orders of your patron, and your patron can perceive through its senses and send it orders at any time. In combat, its initiative is 5 less than yours. See the Simulacrum Tutor stat block below."
 			]
 		}
 	]
