@@ -14,7 +14,7 @@
 		],
 		"edition": "one",
 		"dateAdded": 1769368690,
-		"dateLastModified": 1769763859
+		"dateLastModified": 1769764248
 	},
 	"subclass": [
 		{
@@ -155,7 +155,7 @@
 						"ac": [14],
 						"hp": {
 							"average": 0,
-							"formula": "5 X @warlockLevel@"
+							"formula": "5 X Warlock Level"
 						
 						},
 						"speed": {
@@ -168,13 +168,13 @@
 						"wis": 14,
 						"cha": 20,
 						"save": {
-							"int": "+5+@PB@",
-							"wis": "+2+@PB@",	
-							"cha": "+5+@PB@"
+							"int": "+5 + PB",
+							"wis": "+2 + PB",	
+							"cha": "+5 + PB"
 						},
 						"skill": {
-							"arcana": "+5+@PB@",
-							"history": "+5+@PB@"
+							"arcana": "+5 + PB",
+							"history": "+5 + PB"
 						},
 						"senses": [
 							"Darkvision 60 ft.",
