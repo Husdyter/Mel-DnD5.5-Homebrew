@@ -4,10 +4,10 @@
 			{
 				"json": "MyconidHybrid",
 				"abbreviation": "MH",
-				"full": "Myconid Hybrid Playable Race",
-				"authors": ["Homebrew"],
+				"full": "Myconid Hybrid Playable Species (2024)",
+				"authors": ["Mel"],
 				"convertedBy": ["Mel"],
-				"version": "1.0",
+				"version": "1.1",
 				"color": "4A6B35"
 			}
 		],
@@ -21,16 +21,6 @@
 			"page": 1,
 			"size": ["M", "S"],
 			"speed": 30,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": ["str", "dex", "con", "int", "wis", "cha"],
-							"weights": [2, 1]
-						}
-					}
-				}
-			],
 			"traitTags": [
 				"Monster Features"
 			],
