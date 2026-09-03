@@ -1,0 +1,82 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MyconidHybrid",
+				"abbreviation": "MH",
+				"full": "Myconid Hybrid Playable Race",
+				"authors": ["Homebrew"],
+				"convertedBy": ["Mel"],
+				"version": "1.0",
+				"color": "4A6B35"
+			}
+		],
+		"dateAdded": 1769368690,
+		"dateLastModified": 1769764248
+	},
+	"race": [
+		{
+			"name": "Myconid Hybrid",
+			"source": "MyconidHybrid",
+			"page": 1,
+			"size": ["M", "S"],
+			"speed": 30,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": ["str", "dex", "con", "int", "wis", "cha"],
+							"weights": [2, 1]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Monster Features"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				"Somewhere in the Underdark, creatures born from the parasitic relationship between fungi and some poor fool that got lost in the tunnels and caves which constitutes this maze-like nightmare, roam in the dark, seeking for flesh to consume and appease their hunger.",
+				{
+					"type": "entries",
+					"name": "Mycelial Flesh",
+					"entries": [
+						"Part of your body is not your body anymore; with each passing day, the fungi claims more of your flesh and is slowly killing you.",
+						"You have a counter that represents the growth status of the fungi. It starts at 5. Each time you don’t meet the minimum food requirements in a day, roll {@dice 1d4}; subtract the result from your maximum hit points and add it to your Fungal counter.",
+						"Additionally, for each 3 lbs of food you eat, you can make a Constitution saving throw. On a success, roll {@dice 1d4}, subtract the result from your Fungal counter, and add it to your maximum hit points. Your Fungal counter cannot be reduced below 5.",
+						"If your maximum hit points are reduced to 0 in this way, you lose control of your character, and it transforms into a {@creature Myconid Adult|MM} zombie."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Infectious Spores",
+					"entries": [
+						"Thanks to your new body roommate, you have gained new abilities that allow you to do things you couldn’t before in exchange for a small part of yourself.",
+						"You have a number of Spore Charges equal to your Proficiency Bonus, and you regain all expended charges when you finish a Long Rest. When you expend a Spore Charge, roll {@dice 1d4} and subtract the result from your maximum hit points. You then gain temporary hit points equal to half your Fungal counter + the result of the die roll.",
+						"You can use your Spore Charges to power the following abilities. You can spend additional charges when activating an ability to amplify its effects:",
+						{
+							"type": "list",
+							"items": [
+								"{@bold Telepathic Spores:} As a Bonus Action, you can establish telepathic communication with any number of creatures and plants within a 20-foot range emanation for 10 minutes. {@bold Amplify:} You can spend additional charges, adding 20 feet to the range for each extra charge spent.",
+								"{@bold Spore Echolocation:} As a Bonus Action, you spread spores in a 10-foot radius emanation centered on you. For 1 minute, you gain Blindsight within that range. {@bold Amplify:} You can spend additional charges, adding 5 feet to the range for each extra charge spent.",
+								"{@bold Cordycepian Spores:} When you are attacked by a creature within 5 feet of you, you can use your Reaction and spend a charge to force every creature within 5 feet of you to make a Constitution saving throw (DC 13). On a failure, a target takes {@damage 1d6} poison damage. Starting at 5th level, if a creature fails the save by 5 or more, it is {@condition charmed|XPHB} until the end of its next turn. {@bold Amplify:} You can spend additional charges, adding +2 to the DC for each extra charge spent."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Another Conscience",
+					"entries": [
+						"When you fall {@condition unconscious|XPHB}, your body has the ability to keep moving without your conscious control."
+					]
+				}
+			]
+		}
+	]
+}
